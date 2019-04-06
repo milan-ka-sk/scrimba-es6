@@ -1,14 +1,14 @@
-const personalInformation = {
-    firstName: 'Dylan',
-    lastName: 'Israel',
-    city: 'Austin',
-    state: 'Texas',
-    zipCode: 73301
-};
+let [firstName, middleName, lastName] = ['Dylan', 'Coding God', 'Israel'];
+console.log(`${firstName} ${middleName} ${lastName}`);
 
-// const {firstName, lastName} = personalInformation;
-// console.log(`${firstName} ${lastName}`);
+// we can even set the value 
+middleName = 'the Notorious';
+console.log(middleName);
 
-// we can even asign an alias
-const {firstName: fn, lastName: ln} = personalInformation;
-console.log(`${fn} ${ln}`);
+// pokusy
+let arr = ['aa', 'bb', 'cc'];
+let [a, b, c] = arr;
+
+console.log(b);
+b='xxx';
+console.log(arr); // !!!!!!
