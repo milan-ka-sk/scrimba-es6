@@ -1,12 +1,17 @@
-let example1 = [1,2,3,4,5,6];
-let example2 = [...example1];
+// old
 
-console.log(example2); //  [1, 2, 3, 4, 5, 6]
+// function add(nums) {
+    
+//     console.log(arguments); // Arguments(5) [4, 5, 7, 8, 12, callee: ƒ, Symbol(Symbol.iterator): ƒ] ....
+// }
 
-// pokusy
-example2.push('x');
-console.log(example2); // [1, 2, 3, 4, 5, 6, "x"]
-console.log(example1); // [1, 2, 3, 4, 5, 6] .. i.e. example2 is a new array and not a reference to example1
+// add(4, 5, 7, 8, 12)
 
-let example3 = [10, 20, ...example1, 40];
-console.log(example3); // [10, 20, 1, 2, 3, 4, 5, 6, 40]
+// new
+
+function add(...nums) {
+    console.log(nums); // [4, 5, 7, 8, 12]
+    console.log(Array.isArray(nums)); // true
+}
+
+add(4, 5, 7, 8, 12)
