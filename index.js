@@ -1,14 +1,14 @@
-let word1 = 'Dylan';
-let word2 = 'Israel';
-let num1 = 2;
-let num2 = 3;
+const personalInformation = {
+    firstName: 'Dylan',
+    lastName: 'Israel',
+    city: 'Austin',
+    state: 'Texas',
+    zipCode: 73301
+};
 
-const fullName = `${num1 + num2} ${word2}`;
-console.log(fullName);
+// const {firstName, lastName} = personalInformation;
+// console.log(`${firstName} ${lastName}`);
 
-// 2 lines
-let example = `${word1} 
-${word2}`;
-
-console.log(example)
-document.getElementById('example').innerText = example;
+// we can even asign an alias
+const {firstName: fn, lastName: ln} = personalInformation;
+console.log(`${fn} ${ln}`);
