@@ -1,22 +1,17 @@
-// function addressMaker(address) {
-//     const newAddress = {
-//         city: address.city,
-//         state: address.state,
-//         country: 'United States'
-//     };
+// let incomes = [62000, 67000, 75000];
+// let total = 0;
+
+// for (const income of incomes) {
+//     console.log(income);
+//     total += income;
 // }
 
-// addressMaker({city: 'Austin', state: 'Texas'});
+// console.log(total);
 
-function addressMaker(address) {
-    const {city, state} = address;
-    
-    const newAddress = {
-        city,
-        state,
-        country: 'United States'
-    };
-    console.log(`${newAddress.city}, ${newAddress.state}, ${newAddress.country}`)
+// one can iterate over any iterable e.x. string
+let fullName = "Dylan Coding God Israel";
+
+
+for (const char of fullName) {
+    console.log(char);
 }
-
-addressMaker({city: 'Austin', state: 'Texas'});
