@@ -1,4 +1,7 @@
-let example = 'Dylan';
+import { Animal, Cat } from './animal.js';
 
-console.log(example.padStart(10, 'a')); // aaaaaDylan
-console.log(example.padEnd(10, 'a')); // Dylanaaaaa
+let cat = new Cat('Cat', 4);
+
+cat.makeNoise(); // meow
+
+console.log(cat.metaData); // Type: Cat, Legs: 4
