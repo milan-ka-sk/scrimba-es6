@@ -1,14 +1,17 @@
-let [firstName, middleName, lastName] = ['Dylan', 'Coding God', 'Israel'];
-console.log(`${firstName} ${middleName} ${lastName}`);
+// old
+// function addressMaker(city, state) {
+//     const newAdress = {city: city, state: state};
+    
+//     console.log(newAdress); // {city: "Austin", state: "Texas"}
+// }
 
-// we can even set the value 
-middleName = 'the Notorious';
-console.log(middleName);
+// addressMaker('Austin', 'Texas');
 
-// pokusy
-let arr = ['aa', 'bb', 'cc'];
-let [a, b, c] = arr;
+// new
+function addressMaker(city, state) {
+    const newAdress = {city, state};
+    
+    console.log(newAdress); // {city: "Austin", state: "Texas"}
+}
 
-console.log(b);
-b='xxx';
-console.log(arr); // !!!!!!
+addressMaker('Austin', 'Texas');
