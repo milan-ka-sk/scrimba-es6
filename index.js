@@ -1,17 +1,22 @@
-// old
-// function addressMaker(city, state) {
-//     const newAdress = {city: city, state: state};
-    
-//     console.log(newAdress); // {city: "Austin", state: "Texas"}
+// function addressMaker(address) {
+//     const newAddress = {
+//         city: address.city,
+//         state: address.state,
+//         country: 'United States'
+//     };
 // }
 
-// addressMaker('Austin', 'Texas');
+// addressMaker({city: 'Austin', state: 'Texas'});
 
-// new
-function addressMaker(city, state) {
-    const newAdress = {city, state};
+function addressMaker(address) {
+    const {city, state} = address;
     
-    console.log(newAdress); // {city: "Austin", state: "Texas"}
+    const newAddress = {
+        city,
+        state,
+        country: 'United States'
+    };
+    console.log(`${newAddress.city}, ${newAddress.state}, ${newAddress.country}`)
 }
 
-addressMaker('Austin', 'Texas');
+addressMaker({city: 'Austin', state: 'Texas'});
