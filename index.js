@@ -1,17 +1,21 @@
-// old
-
-// function add(nums) {
-    
-//     console.log(arguments); // Arguments(5) [4, 5, 7, 8, 12, callee: ƒ, Symbol(Symbol.iterator): ƒ] ....
-// }
-
-// add(4, 5, 7, 8, 12)
-
-// new
-
 function add(...nums) {
-    console.log(nums); // [4, 5, 7, 8, 12]
-    console.log(Array.isArray(nums)); // true
+    
+    let total;
+    
+    // old
+    // total = nums.reduce(function(x,y){
+    //     return x + y;
+    // })
+
+    // es6
+    // total = nums.reduce((x,y) => {
+    //     return x + y;
+    // })
+
+    // if it is just a one line return we can shorten even it so:
+    total = nums.reduce((x, y) => x + y);
+    
+    console.log(total);
 }
 
 add(4, 5, 7, 8, 12)
