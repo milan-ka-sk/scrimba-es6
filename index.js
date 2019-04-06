@@ -1,6 +1,4 @@
-import { data } from './data.js'; // thorws error: Uncaught SyntaxError: Unexpected token {
- 
-console.log(data);
+let example = 'Dylan';
 
-// quite good explanation
-// https://www.youtube.com/watch?v=Jqn_wjkSZwo
+console.log(example.padStart(10, 'a')); // aaaaaDylan
+console.log(example.padEnd(10, 'a')); // Dylanaaaaa
