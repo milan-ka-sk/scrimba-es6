@@ -1,25 +1,13 @@
-// function add(numArray) {
-//     //numArray = numArray || [];  // alr1
-//     numArray = typeof numArray !== 'undefined' ? numArray : []; // alt 2
-//     // https://stackoverflow.com/questions/894860/set-a-default-parameter-value-for-a-javascript-function
+// does an arrau include an item?
 
-//     let total = 0;
-//     numArray.forEach((element) => {
-//         total += element;
-//     });
-    
-//     console.log(total);
-// }
+let numArray = [1,2,3,4,5];
 
-// add();
+// old
 
-function add(numArray = []) {
-    let total = 0;
-    numArray.forEach((element) => {
-        total += element;
-    });
-    
-    console.log(total);
-}
+console.log(numArray.indexOf(0)); // -1 
+console.log(numArray.indexOf(2)); // 1
 
-add();
+// es6
+
+console.log(numArray.includes(0)); // false
+console.log(numArray.includes(2)); // true
