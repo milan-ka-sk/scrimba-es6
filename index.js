@@ -1,13 +1,30 @@
-// does an arrau include an item?
+if (false) {
+    var example = 5;
+}
 
-let numArray = [1,2,3,4,5];
+console.log(example); // undefined
 
-// old
+/*
+// is the same as:
+var example; // hoisting
 
-console.log(numArray.indexOf(0)); // -1 
-console.log(numArray.indexOf(2)); // 1
+if (false) {
+    example = 5;
+}
 
-// es6
+*/
 
-console.log(numArray.includes(0)); // false
-console.log(numArray.includes(2)); // true
+if (false) {
+    let example2 = 5; // block scoped
+}
+
+// console.log(example2); // error
+
+const example3  = 3; // read only
+//example3 = 2;   // error
+console.log(example3);
+
+// if it is an array or object we still can adjust it like so
+const example4 = {};
+example4.firstName = 'Dylan';
+console.log(example4); // {firstName: "Dylan"}
