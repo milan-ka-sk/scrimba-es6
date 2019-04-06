@@ -1,17 +1,12 @@
-// let incomes = [62000, 67000, 75000];
-// let total = 0;
+let example1 = [1,2,3,4,5,6];
+let example2 = [...example1];
 
-// for (const income of incomes) {
-//     console.log(income);
-//     total += income;
-// }
+console.log(example2); //  [1, 2, 3, 4, 5, 6]
 
-// console.log(total);
+// pokusy
+example2.push('x');
+console.log(example2); // [1, 2, 3, 4, 5, 6, "x"]
+console.log(example1); // [1, 2, 3, 4, 5, 6] .. i.e. example2 is a new array and not a reference to example1
 
-// one can iterate over any iterable e.x. string
-let fullName = "Dylan Coding God Israel";
-
-
-for (const char of fullName) {
-    console.log(char);
-}
+let example3 = [10, 20, ...example1, 40];
+console.log(example3); // [10, 20, 1, 2, 3, 4, 5, 6, 40]
