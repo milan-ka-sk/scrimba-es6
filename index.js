@@ -1,30 +1,6 @@
-if (false) {
-    var example = 5;
-}
+import { data } from './data.js'; // thorws error: Uncaught SyntaxError: Unexpected token {
+ 
+console.log(data);
 
-console.log(example); // undefined
-
-/*
-// is the same as:
-var example; // hoisting
-
-if (false) {
-    example = 5;
-}
-
-*/
-
-if (false) {
-    let example2 = 5; // block scoped
-}
-
-// console.log(example2); // error
-
-const example3  = 3; // read only
-//example3 = 2;   // error
-console.log(example3);
-
-// if it is an array or object we still can adjust it like so
-const example4 = {};
-example4.firstName = 'Dylan';
-console.log(example4); // {firstName: "Dylan"}
+// quite good explanation
+// https://www.youtube.com/watch?v=Jqn_wjkSZwo
