@@ -1,7 +1,9 @@
-import { Animal, Cat } from './animal.js';
+function add(param1,){ // no error now
+    const example = {
+        name: 'Dylan', // no error now
+    };
+    
+    console.log(example)
+};
 
-let cat = new Cat('Cat', 4);
-
-cat.makeNoise(); // meow
-
-console.log(cat.metaData); // Type: Cat, Legs: 4
+add(2);
